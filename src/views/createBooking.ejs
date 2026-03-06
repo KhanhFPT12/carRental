@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+
+<h2>Create Booking</h2>
+
+<form method="POST" action="/bookings">
+
+<div class="mb-3">
+<label>Customer Name</label>
+<input name="customerName" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>Car Number</label>
+<input name="carNumber" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>Start Date</label>
+<input type="date" name="startDate" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>End Date</label>
+<input type="date" name="endDate" class="form-control">
+</div>
+
+<button class="btn btn-success">Create Booking</button>
+
+</form>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,43 @@
+<%- include("partials/header") %>
+
+<h2>Add Car</h2>
+
+<form method="POST" action="/cars">
+
+<div class="mb-3">
+
+<label>Car Number</label>
+
+<input name="carNumber" class="form-control">
+
+</div>
+
+<div class="mb-3">
+
+<label>Capacity</label>
+
+<input name="capacity" class="form-control">
+
+</div>
+
+<div class="mb-3">
+
+<label>Price Per Day</label>
+
+<input name="pricePerDay" class="form-control">
+
+</div>
+
+<div class="mb-3">
+
+<label>Features</label>
+
+<input name="features" class="form-control">
+
+</div>
+
+<button class="btn btn-primary">Create</button>
+
+</form>
+
+<%- include("partials/footer") %>

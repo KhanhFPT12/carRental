@@ -1,0 +1,37 @@
+<%- include("partials/header") %>
+
+<h2>Cars</h2>
+
+<div class="row">
+
+<% cars.forEach(car=>{ %>
+
+<div class="col-md-4">
+
+<div class="card mb-4 shadow">
+
+<div class="card-body">
+
+<h5><%= car.carNumber %></h5>
+
+<p>Capacity: <%= car.capacity %></p>
+
+<p>Price/day: <%= car.pricePerDay %></p>
+
+<p>Status:
+<span class="badge bg-success">
+<%= car.status %>
+</span>
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<% }) %>
+
+</div>
+
+<%- include("partials/footer") %>
