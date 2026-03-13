@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const app = express();
 const cors = require("cors");
-
+const cookieParser = require("cookie-parser");
 // middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -36,6 +36,7 @@ const cars = await Car.countDocuments();
 res.render("dashboard",{bookings,cars});
 
 });
+app.use(cookieParser());
 
 // cors
 app.use(cors({
